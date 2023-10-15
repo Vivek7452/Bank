@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name ="getTutorial" class="org.vivek.practice.TutorialAction">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+		<action name="login" class="org.vivek.practice.LoginAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="CreateAcc" class="org.vivek.practice.CreateAccountAction">
+            <result name="success">/index.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="deposit" class="org.vivek.practice.DepositAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+          <action name="debit" class="org.vivek.practice.DebitAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="delete" class="org.vivek.practice.DeleteAction">
+            <result name="success">/index.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="transfer" class="org.vivek.practice.TransferMoneyAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+            <result name="overlimit">/overlimit.jsp</result>
+            <result name="accountnotfound">/AccNotFound.jsp</result>
+        </action>
+	</package>
+</struts>
